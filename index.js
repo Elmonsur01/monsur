@@ -49,7 +49,7 @@ app.post('/login', async (req, res) => {
     decrypted += decipher.final('utf8');
 
     res.send(
-      `Welcome ${name}!  Your encrypted medical history is "${medical_history}" dnd the decrypted version is "${decrypted}"`
+      `Welcome ${name}!  Your encrypted medical history is "${medical_history}" and the decrypted version is "${decrypted}"`
     );
   } catch (err) {
     console.error(err);
